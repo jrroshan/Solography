@@ -108,7 +108,7 @@ function custom_gallery(){
            'title','thumbnail'
         ),
         'taxonomies'=>array(
-            'gallery_category'
+            'category'
         )
 
     )
@@ -123,3 +123,53 @@ function reg_cat() {
     register_taxonomy_for_object_type('category','custom_gallery');
 }
 add_action('init', 'reg_cat');
+
+// Custom Service option
+
+function custom_services(){
+    register_post_type('Services',
+    array(
+        'rewrite' => array('slug'=>'services'),
+        'labels'=> array(
+            'name'=>'Services',
+            'singular_name'=> 'services',
+            'add_new_itemy'=>'Add new Service',
+            'edit_item'=>'Edit Services'
+        ),
+        'menu-icon'=>'dashicons',
+        'public'=>true,
+        'has_archive'=>true,
+        'supports'=>array(
+           'title','editor'
+        )
+
+    )
+);
+}
+
+add_action('init','custom_services');
+
+// Custom About Option
+
+function custom_about(){
+    register_post_type('Services',
+    array(
+        'rewrite' => array('slug'=>'services'),
+        'labels'=> array(
+            'name'=>'Services',
+            'singular_name'=> 'services',
+            'add_new_itemy'=>'Add new Service',
+            'edit_item'=>'Edit Services'
+        ),
+        'menu-icon'=>'dashicons',
+        'public'=>true,
+        'has_archive'=>true,
+        'supports'=>array(
+           'title','editor'
+        )
+
+    )
+);
+}
+
+add_action('init','custom_about');
