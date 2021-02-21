@@ -152,20 +152,20 @@ add_action('init','custom_services');
 // Custom About Option
 
 function custom_about(){
-    register_post_type('Services',
+    register_post_type('About',
     array(
-        'rewrite' => array('slug'=>'services'),
+        'rewrite' => array('slug'=>'about'),
         'labels'=> array(
-            'name'=>'Services',
-            'singular_name'=> 'services',
-            'add_new_itemy'=>'Add new Service',
-            'edit_item'=>'Edit Services'
+            'name'=>'About',
+            'singular_name'=> 'abouts',
+            'add_new_itemy'=>'Add new about',
+            'edit_item'=>'Edit Abouts'
         ),
         'menu-icon'=>'dashicons',
         'public'=>true,
         'has_archive'=>true,
         'supports'=>array(
-           'title','editor'
+           'title','editor','thumbnail'
         )
 
     )
