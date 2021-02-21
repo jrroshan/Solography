@@ -1,3 +1,13 @@
+<?php
+/**
+ * Template Name: Services page template
+ *.
+ *
+ */
+
+?>
+
+
 <?php get_header(); ?>
 
     <!-- Breadcrumb Begin -->
