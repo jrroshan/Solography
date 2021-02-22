@@ -117,12 +117,6 @@ function custom_gallery(){
 
 add_action('init','custom_gallery');
 
-// Custom Post Type
-
-function reg_cat() {
-    register_taxonomy_for_object_type('category','custom_gallery');
-}
-add_action('init', 'reg_cat');
 
 // Custom Service option
 
@@ -173,3 +167,10 @@ function custom_about(){
 }
 
 add_action('init','custom_about');
+
+// Page attributes
+
+function remove_page_attribute_support() {
+    remove_post_type_support('page','page-attributes');
+}
+add_action( 'init', 'remove_page_attribute_support' );
