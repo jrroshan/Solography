@@ -14,9 +14,9 @@
 
 <body>
     <!-- Page Preloder -->
-    <div id="preloder">
+    <!-- <div id="preloder">
         <div class="loader"></div>
-    </div>
+    </div> -->
 
     <!-- Header Section Begin -->
 
@@ -38,10 +38,10 @@
                     </div>
                     <nav class="nav-menu mobile-menu">
                         <ul>
-                            <li class="active"><a href="./index.html">Home</a></li>
-                            <li><a href="./about.html">About</a></li>
-                            <li><a href="./services.html">Services</a></li>
-                            <li><a href="./portfolio.html">Portfolio</a></li>
+                            <li class="active"><a href="<?php echo site_url(''); ?>">Home</a></li>
+                            <li><a href="<?php echo site_url('/about-page'); ?>">About</a></li>
+                            <li><a href="<?php echo site_url('/services'); ?>">Services</a></li>
+                            <li><a href="<?php echo site_url('/portfolio'); ?>">Portfolio</a></li>
                             <li><a href="./blog.html">Blog</a></li>
                             <li><a href="#">Pages</a>
                                 <ul class="dropdown">
